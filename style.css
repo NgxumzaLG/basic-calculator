@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lato', Helvetica, sans-serif;
+   background: #00AAFF;
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1024px;
+   text-align: center;
+}
+
+header {
+   height: 15vh;
+   padding: 25px 0;
+}
+
+header h1 {
+   text-align: center;
+}
+
+form {
+   width: 75%;
+   margin: 15px auto;
+}
+
+form .input-box {
+   margin-bottom: 15px;
+}
+
+form .input-box input, form .input-box select {
+   height: 45px;
+   outline: none;
+   font-size: 16px;
+   border-radius: 5px;
+   padding-left: 15px;
+   border: 1px solid #ccc;
+   border-bottom-width: 2px;
+   transition: all 0.3s ease;
+}
+
+form .input-box select {
+   height: 40px;
+   width: 110px;
+}
+
+form .input-box input:focus {
+   border-color: black;
+}
+
+form .input-box button {
+   font-size: 16px;
+   font-weight: 700;
+   min-width: 85px;
+   margin: 5px 5px 10px 10px;
+   background: #00FF6C;
+   border-radius: 5px;
+   padding: 12.5px 20px;
+   border: 2.5px solid #00FF6C;
+   color: black;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+form .input-box button:hover {
+   background: transparent;
+}
+
+.answer  {
+   width: 20%;
+   display: flex;
+   margin: 15px auto;
+   justify-content: space-around;
+   align-items: center;
+}
