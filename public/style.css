@@ -8,7 +8,7 @@
 
 body {
    font-family: 'Lato', Helvetica, sans-serif;
-   background: #00AAFF;
+   background: #00aaff;
 }
 
 .container {
@@ -35,7 +35,8 @@ form .input-box {
    margin-bottom: 15px;
 }
 
-form .input-box input, form .input-box select {
+form .input-box input,
+form .input-box select {
    height: 45px;
    outline: none;
    font-size: 16px;
@@ -60,10 +61,10 @@ form .input-box button {
    font-weight: 700;
    min-width: 85px;
    margin: 5px 5px 10px 10px;
-   background: #00FF6C;
+   background: #00ff6c;
    border-radius: 5px;
    padding: 12.5px 20px;
-   border: 2.5px solid #00FF6C;
+   border: 2.5px solid #00ff6c;
    color: black;
    cursor: pointer;
    transition: all 0.3s ease;
@@ -73,10 +74,64 @@ form .input-box button:hover {
    background: transparent;
 }
 
-.answer  {
-   width: 20%;
+.answer {
+   width: 25%;
    display: flex;
    margin: 15px auto;
    justify-content: space-around;
    align-items: center;
+}
+
+.answer h2 {
+   padding-right: 10px;
+}
+
+/********** MEDIA QUERY **********/
+
+@media screen and (max-width: 1024px) {
+   .answer {
+      width: 35%;
+   }
+}
+
+@media screen and (max-width: 780px) {
+   .answer {
+      width: 45%;
+   }
+}
+
+@media screen and (max-width: 580px) {
+   form {
+      width: 80%;
+   }
+
+   .answer {
+      width: 60%;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   form {
+      width: 85%;
+   }
+
+   .answer {
+      width: 75%;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   form {
+      width: 90%;
+   }
+
+   .answer {
+      width: 85%;
+      flex-direction: column;
+   }
+
+   .answer h1,
+   .answer h2 {
+      margin: 5px auto;
+   }
 }

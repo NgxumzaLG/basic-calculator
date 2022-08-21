@@ -1,0 +1,35 @@
+<header class='container'>
+   <h1>Basic Calculator</h1>
+</header>
+
+<section class='container'>
+   <form action='/calculate' method='post'>
+      <div class='input-box'>
+         <input type='number' name='firstValue' placeholder='Enter a number' required />
+      </div>
+
+      <div class='input-box'>
+         <span class='details'>Operation:</span>
+
+         <select name='operation'>
+            <option value='add'>Add</option>
+            <option value='subract'>Subract</option>
+            <option value='multiple'>Multiple</option>
+            <option value='divide'>Divide</option>
+         </select>
+      </div>
+
+      <div class='input-box'>
+         <input type='number' name='secondValue' placeholder='Enter a number' required />
+      </div>
+
+      <div class='input-box'>
+         <button type='submit'>Calculate</button>
+      </div>
+   </form>
+</section>
+
+<section class='container answer'>
+   <h2>Answer:</h2>
+   <h1>{{results}}</h1>
+</section>
